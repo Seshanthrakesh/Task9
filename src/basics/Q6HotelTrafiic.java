@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Q6HotelTrafiic {
 	int month,days;
-	double roomRent=1000.00;
+	double roomRent;
 	public void  NormalSeason()
 	{
 		System.out.println("Is Not Peak Season .Room Rent remains the same.");
@@ -22,6 +22,8 @@ public class Q6HotelTrafiic {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Month in Number ");
 		obj.month=sc.nextInt();
+		System.out.print("Enter the Room Rent ");
+		obj.roomRent=sc.nextInt();
 		if (obj.month<13)
 		{
 		System.out.print("Enter the Number of days stayed:  ");
